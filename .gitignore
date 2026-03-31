@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+target/
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
+Thumbs.db
+frontend/.env.local
+backend/.mvn/wrapper/apache-maven-*.zip
+backend/.m2/
