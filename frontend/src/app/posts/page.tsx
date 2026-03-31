@@ -6,7 +6,7 @@ export default async function PostsPage() {
 
   return (
     <div className="space-y-8">
-      <section className="rounded-[2rem] border border-black/5 bg-white/80 p-8 shadow-card">
+      <section className="rounded-none border-4 border-[#7a886c] bg-[#fcfef9]/98 p-8 shadow-card">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
           Posts
         </p>
@@ -26,4 +26,6 @@ export default async function PostsPage() {
     </div>
   );
 }
+
+
 

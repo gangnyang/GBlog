@@ -9,7 +9,7 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-16">
-      <section className="overflow-hidden rounded-[2.5rem] border border-black/5 bg-white/80 px-8 py-12 shadow-card md:px-12">
+      <section className="overflow-hidden rounded-none border-4 border-[#7a886c] bg-[#fcfef9]/98 px-8 py-12 shadow-card md:px-12">
         <div className="grid gap-8 md:grid-cols-[1.4fr_0.9fr] md:items-end">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
@@ -31,20 +31,20 @@ export default async function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/about"
-                className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white"
+                className="rounded-none border-4 border-[#7a886c] bg-[#f2f8eb] px-6 py-3 text-sm font-semibold text-ink"
               >
                 자기소개 보기
               </Link>
               <Link
                 href="/posts"
-                className="rounded-full border border-ink/15 px-6 py-3 text-sm font-semibold text-ink"
+                className="rounded-none border-4 border-[#7a886c] bg-[#f8fbf3] px-6 py-3 text-sm font-semibold text-ink"
               >
                 게시글 보러가기
               </Link>
             </div>
           </div>
-          <div className="rounded-[2rem] bg-pine px-6 py-8 text-mist">
-            <p className="text-sm uppercase tracking-[0.24em] text-mist/70">
+          <div className="rounded-none border-4 border-[#7a886c] bg-[#eef6e7] px-6 py-8 text-ink">
+            <p className="text-sm uppercase tracking-[0.24em] text-ink/55">
               Current Focus
             </p>
             <ul className="mt-5 space-y-4 text-base leading-7">
@@ -77,4 +77,6 @@ export default async function HomePage() {
     </div>
   );
 }
+
+
 

@@ -35,7 +35,7 @@ export default function RootLayout({
         <div className="min-h-screen">
           <SiteHeader />
           <main className="mx-auto max-w-6xl px-6 py-12">{children}</main>
-          <footer className="mx-auto max-w-6xl px-6 pb-10 pt-2 text-sm text-ink/55">
+          <footer className="mx-auto mt-8 max-w-6xl border-t-4 border-[#7a886c] px-6 pb-10 pt-6 text-sm text-ink/55">
             Personal introduction and writing archive for local development.
           </footer>
         </div>
@@ -43,4 +43,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
 

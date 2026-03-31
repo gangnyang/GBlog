@@ -9,7 +9,7 @@ type PostCardProps = {
 
 export function PostCard({ post }: PostCardProps) {
   return (
-    <article className="rounded-[2rem] border border-black/5 bg-white p-6 shadow-card transition hover:-translate-y-1">
+    <article className="rounded-none border-4 border-[#7a886c] bg-[#fcfef9] p-6 shadow-card transition hover:-translate-y-1">
       <p className="text-sm text-ink/55">
         {formatDate(post.createdAt)} · {post.authorName}
       </p>
@@ -17,11 +17,13 @@ export function PostCard({ post }: PostCardProps) {
       <p className="mt-3 leading-7 text-ink/70">{post.summary}</p>
       <Link
         href={`/posts/${post.slug}`}
-        className="mt-5 inline-flex text-sm font-semibold text-accent"
+        className="mt-5 inline-flex rounded-none border-4 border-[#7a886c] bg-[#f3f8ed] px-3 py-2 text-sm font-semibold text-accent"
       >
         글 읽기
       </Link>
     </article>
   );
 }
+
+
 
